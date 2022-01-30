@@ -1,0 +1,34 @@
+{
+  "name": "amn-list-api",
+  "version": "1.0.0",
+  "description": "Api for my anime/manga/lightnovel list web page",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiko27/amn-list-api.git"
+  },
+  "keywords": [
+    "api",
+    "amn-list",
+    "anime",
+    "manga",
+    "lightnovel"
+  ],
+  "author": "Hiko27",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
