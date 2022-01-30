@@ -1,5 +1,5 @@
 {
-  "name": "amn-list-api",
+  "name": "aml-list-api",
   "version": "1.0.0",
   "description": "Api for my anime/manga/lightnovel list web page",
   "main": "index.js",
