@@ -26,11 +26,9 @@ export const addNew = async (req, res) => {
 export const updateData = async (req, res) => {
   try {
     const reqData = req.body;
-    const updateData = await DataModel.findOneAndUpdate({ _id: reqData._id }, reqData, {
-      new: true,
-    });
+    await DataModel.updateOne({ _id: reqData._id }, reqData);
 
-    res.status(200).json(updateData);
+    res.status(204).send();
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
@@ -40,9 +38,9 @@ export const updateData = async (req, res) => {
 export const deleteData = async (req, res) => {
   try {
     const reqId = req.body._id;
-    const deleteData = await DataModel.findOneAndDelete({ _id: reqId }, { new: true });
+    await DataModel.deleteOne({ _id: reqId });
 
-    res.status(200).send(deleteData);
+    res.status(204).send();
   } catch (err) {
     console.log(err);
     res.status(400).json(err);

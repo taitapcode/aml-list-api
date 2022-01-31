@@ -1,0 +1,34 @@
+# Get all data
+GET http://localhost:5000
+
+###
+# Add new data
+POST http://localhost:5000
+Content-Type: application/json
+
+{
+  "name": "",
+  "link": "",
+  "imageUrl": "",
+  "type": "",
+  "status": ""
+}
+
+###
+# Update data
+PUT http://localhost:5000
+Content-Type: application/json
+
+{
+  "_id": "",
+  "status": ""
+}
+
+###
+# Delete data
+DELETE http://localhost:5000
+Content-Type: application/application/json
+
+{
+  "_id": ""
+}
