@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 # Delete data
 DELETE http://localhost:5000
-Content-Type: application/application/json
+Content-Type: application/json
 
 {
   "_id": ""
