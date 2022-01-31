@@ -13,8 +13,11 @@ export const getAll = async (req, res) => {
 export const addNew = async (req, res) => {
   try {
     const reqData = {
-      ...req.body,
       name: req.body.name.trim(),
+      link: req.body.link,
+      imageUrl: req.body.imageUrl,
+      type: req.body.type,
+      status: req.body.status,
     };
     const newData = new DataModel(reqData);
     await newData.save();
