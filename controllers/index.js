@@ -15,7 +15,7 @@ export const addNew = async (req, res) => {
     const reqData = {
       name: req.body.name.trim(),
       link: req.body.link,
-      imageUrl: req.body.imageUrl,
+      imageURL: req.body.imageURL,
       type: req.body.type,
       status: req.body.status,
     };
